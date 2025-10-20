@@ -1,0 +1,760 @@
+Script started on 2025-09-17 11:02:49+02:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="120" LINES="11"]
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ ls
+[?2004lSzFaldDH_PFAM_blast_hits_filtered.fasta  aclust.c  bclust.c  [0m[01;32mmakefile[0m    version.txt
+[01;32maclust[0m                                   [01;32mbclust[0m    cclust.c  typescript
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ grip[K[Kep -c
+[?2004lUsage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ grep -c ">" SzFaldDH_PFAM_blast_hits_filtered.fasta 
+[?2004l500
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ wc !$
+[?2004lwc SzFaldDH_PFAM_blast_hits_filtered.fasta
+  4003   4932 247289 SzFaldDH_PFAM_blast_hits_filtered.fasta
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ head -400 !$ > small_SzFaldDH_blast.fa
+[?2004lhead -400 SzFaldDH_PFAM_blast_hits_filtered.fasta > small_SzFaldDH_blast.fa
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ vi !$
+[?2004lvi small_SzFaldDH_blast.fa
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;11r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[11;1H"small_SzFaldDH_blast.fa" 400L, 24803B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H>G2G6S2|unreviewed|Formaldehyde dehydrogenase, glutathione-independent|taxID:700597
+MAYLKPGTVEVRTIDFPTLELKDGPGVAPANIGRKCRHGVILKILATNICGSDQHMVRGR[2;61H[K[3;1HTTAPEGLVLGHEITGEVVERGPDVETIDVGDVVSVPFNIACGRCRNCKERKTGICLNVNP[3;61H[K[4;1HARPGAAYGYVDMGGWVGGQAEYVMIPYADFNLLKFPDPDQAREKLLDLTMLSDIFPTGFH
+GVVSSGAGVGSTVYVAGAGPVGLAAAASAQLLGAAVVVVGDLNAERLAQARSFGCETVDV
+SQGSVEDQLAQILGEPEVDAAVDAVGFEARGHGPDAQEAPATVLNSLMGVTRAGGALGIP
+GLYVTDDPGGIDQDAKSGTLKVRLGLGWAKSHRFTTGQCPVMQYHRALMMAILHERVHIA
+KAVNATVIGIEDAPTGYAEFDQGASRKYVLNPHGALDGAQPV
+>A0A9X1TPE6|unreviewed|Formaldehyde dehydrogenase|taxID:1077944
+MSGNRAVAYLKPGAVEVRTIDYPSLELQDGPGVAPDNVGRKCRHGVILKVLATNICGSDQ[11;103H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[11;93H/[1;1H[11;94Hc[1;1H[11;95Hc[1;1H[11;96Hc[1;1H[11;97Hc[1;1H[11;98H/[1;1H[11;99Hc[1;1H[11;100Hc[1;1H[11;101Hc[1;1H[11;102Hc[1;1H[11;93H          [1;1H[?25h[?25l[11;93H/[1;1H[11;94H1[1;1H[11;95H8[1;1H[11;96H1[1;1H[11;97H8[1;1H[11;98H/[1;1H[11;99H1[1;1H[11;100H8[1;1H[11;101H1[1;1H[11;102H8[1;1H[11;93H          [1;1H[27m[23m[29m[m[H[2J[1;1H>G2G6S2|unreviewed|Formaldehyde dehydrogenase, glutathione-independent|taxID:700597
+MAYLKPGTVEVRTIDFPTLELKDGPGVAPANIGRKCRHGVILKILATNICGSDQHMVRGR
+TTAPEGLVLGHEITGEVVERGPDVETIDVGDVVSVPFNIACGRCRNCKERKTGICLNVNP
+ARPGAAYGYVDMGGWVGGQAEYVMIPYADFNLLKFPDPDQAREKLLDLTMLSDIFPTGFH
+GVVSSGAGVGSTVYVAGAGPVGLAAAASAQLLGAAVVVVGDLNAERLAQARSFGCETVDV
+SQGSVEDQLAQILGEPEVDAAVDAVGFEARGHGPDAQEAPATVLNSLMGVTRAGGALGIP
+GLYVTDDPGGIDQDAKSGTLKVRLGLGWAKSHRFTTGQCPVMQYHRALMMAILHERVHIA
+KAVNATVIGIEDAPTGYAEFDQGASRKYVLNPHGALDGAQPV
+>A0A9X1TPE6|unreviewed|Formaldehyde dehydrogenase|taxID:1077944
+MSGNRAVAYLKPGAVEVRTIDYPSLELQDGPGVAPDNVGRKCRHGVILKVLATNICGSDQ[11;103H1,1[11CTop"small_SzFaldDH_blast.fa" 400L, 24803B[1;1H[?25h[?25l[11;93HG[1;1H[11;93H [10;1H[27m[23m[29m[m[H[2J[1;1HAGGALGIPGLYVTADPGGVDEDAKSGTLKVRLGLGWAKSHAFTTGQCPVMTYHRSLMMAI
+LHERVHIAKAVNATPISLEDAPRGYAEFDQGASRKYVLDPHGTLSGVSPV
+>A0AAU1ITU8|unreviewed|Formaldehyde dehydrogenase, glutathione-independent|taxID:2903631
+MSGSGNRAVAYLKPGAVEVRTIDYPTLELQDGPGVAPANVGRKARHGVILKVLASNICGS
+DQHMVRGRTTAPEGLVLGHEITGEVVERGPDVEFVDVGDIVSVPFNIACGRCRNCKERKT
+GICLNVNPARPGAAYGYVDMGGWVGGQAEYAMVPYADFNLLRFPDRDEAREKLLDLTMLS
+DIFPTGFHGAVTAGAGVGSTVYVAGAGPVGLAAAASAQLLGAAVVIVGDLNAERLGQARS
+FGCETVDVSRGDIGEQIAEILGEPEVDAAVDAVGFEARAHGPDAQEAPATVLNSLMGITR
+AGGALGIPGLYVTADPGGVDEDAKSGTLKVRLGLGWAKSHAFTTGQCPVMTYHRSLMMAI
+LHERVHIAKAVNATPISLEDAPRGYAEFDQGASRKYVLDPHGTLSGVSPV[11;103H400,1[9CBot[10;1H[?25h[?25l[11;93H:[10;1H[11;93H[K[11;1H:[?25hQ[?25l[11;2H[K[11;2H[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[11;1H[K[11;1H[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ ./aclust -p small_SzFaldDH_blast -jdis small_SzFaldDH_blast.fa 
+[?2004loutput prefix 'small_SzFaldDH_blast'
+assumed parameter [3] '-jdis' not recognized
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ ./aclust -h | more
+[?2004lhelp flag 1
+Input parameters:
+ -msa		multiple sequence alignment input (0)
+ -alf		alignfastas input (0)
+ -dmx (null)	distance matrix input (filename)
+ -acc (null)	accessions input (filename) for subsets of alignfastas
+Alignment parameters:
+ -s (null)	substitution score matrix (filename)
+ -nonself	nonself alignments (0)
+ -go 10      	(double) value of affine gap open penalty
+ -ge 0.5     	(double) value of affine gap extension penalty
+ -gx 0       	(integer) value affine gap crossover maxlength (0 to deactivate)
+Tree-building parameters:
+ -dave		distance averaging mode (0)
+ -e D		D=distance tree, S=also single embed tree, F=also full recursive embed tree
+ -edim 20      	(integer) embed dimension
+Output parameters:
+ -p (null)	prefix for output files
+ -jaln		flag write json alignments (0)
+ -taln		flag write text alignments (0)
+ -wdmx		flag write distance matrix (0)
+ -metadata 1	tree metadata distance/pctid [0-2]
+ -v		verbose stdout and/or stderr (0)
+ -h		show help and quit (1)
+
+Usage: aclust [command line parameters] my.fasta [my.fasta2 [my.fasta3 ...]]
+Usage: aclust -h    to see the list of command line flags and parameters.
+
+Basic operation: ACLUST produces a nearest-neighbor joining tree in Newick format
+based on sequence pairwise distances.
+
+Option 1: Aclust performs pairwise alignments from sequence Fasta:
+	aclust my.fasta [my.fasta2 ...]
+Option 2: Aclust reads an MSA (multiple sequence alignment) Fasta
+	aclust -msa my.multiplealignment.fasta
+Option 3: Aclust reads distances from Alignfastas output
+	aclust -alf my.alignfastas [my.alignfastas2 ...]
+Option 3b: Align reads from alignfastas files, but generates a tree for a subsest of labels
+	aclust -alf -acc my.accessions my.alignfastas [my.alignfastas2 ...]
+
+SEE ALSO: https://github.com/GarryGippert/aclust
+AUTHOR: Garry Paul Gippert, GarryG@dtu.dk, DTU Bioengineering
+ACLUST VERSION: 6e10c3e 2025-07-10 12:25:40 +0200
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ ./aclust -h | morep small_SzFaldDH_blast -jdis small_SzFaldDH_blast.fa [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[37Pvi small_SzFaldDH_blast.fa[49@head -400 SzFaldDH_PFAM_blast_hits_filtered.fasta >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[49Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./aclust -p small_SzFaldDH_blast -jdis small_SzFaldDH_blast.fa [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch | more[Kp small_SzFaldDH_blast -jdis small_SzFaldDH_blast.fa [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@b
+[?2004loutput prefix 'small_SzFaldDH_blast'
+jdis flag 1
+assume termination of parameter stream
+Input parameters:
+ -msa		multiple sequence alignment input (0)
+ -alf		alignfastas input (0)
+ -dmx (null)	distance matrix input (filename)
+ -acc (null)	accessions input (filename) for subsets of alignfastas
+Alignment parameters:
+ -s (null)	substitution score matrix (filename)
+ -nonself	nonself alignments (0)
+ -go 10      	(double) value of affine gap open penalty
+ -ge 0.5     	(double) value of affine gap extension penalty
+ -gx 0       	(integer) value affine gap crossover maxlength (0 to deactivate)
+Tree-building parameters:
+ -dave		distance averaging mode (0)
+ -e D		D=distance tree, S=also single embed tree, F=also full recursive embed tree
+ -edim 20      	(integer) embed dimension
+Branch-binning parameters:
+ -bmin 4       	(integer) Ignore if branches N < bmin
+ -bmed 10      	(integer) Centroid if branch N < bmed
+ -bdis 50      	(double) Centroid if branch ave(Dij) < bdis
+ -jdis 	flag json (default txt) result of distance binning (1) 
+Output parameters:
+ -p small_SzFaldDH_blast	prefix for output files
+ -jaln		flag write json alignments (0)
+ -taln		flag write text alignments (0)
+ -wdmx		flag write distance matrix (0)
+ -metadata 1	tree metadata distance/pctid [0-2]
+ -v		verbose stdout and/or stderr (0)
+ -h		show help and quit (0)
+ACLUST VERSION: 6e10c3e 2025-07-10 12:25:40 +0200
+pparse returns 4
+oprefix small_SzFaldDH_blast
+Binfilename small_SzFaldDH_blast.dbin.dat open for writing
+Blosum62 file ../dat/BLOSUM62.dat readable
+N 24 alphabet ARNDCQEGHILKMFPSTWYVBZX*
+Read 576 matrix elements, 24 alphabet characters ARNDCQEGHILKMFPSTWYVBZX* from ../dat/BLOSUM62.dat
+./bclust Trying to read multiple fasta files, c start 4 of 5
+ argv[4], small_SzFaldDH_blast.fa
+Fasta file small_SzFaldDH_blast.fa readable
+Read 50 Fasta entries from small_SzFaldDH_blast.fa
+read Fasta[0] small_SzFaldDH_blast.fa, index 50
+Blosum PSCORE parameters:
+ Q = 402
+ A = EVD_A_CONST 3.3 + EVD_A_SLOPE 0.387 * log(Q) = 5.62063
+ B = EVD_B_CONST 0.393 + EVD_B_SLOPE 0.0585 * log(Q) = 0.743792
+ Z = 62.2446
+ P = exp((A - Z)/B - exp((A - Z)/B))/B = 1.16485e-33
+ D = exp(-exp((A - Z)/B)) = 1
+ S = -log10(1.0 - D) = 15 (blosum pscore)
+Got DMX with 50 entries, scanning for possible holes...
+Distance matrix complete
+DMX ONE is coded
+Tree file small_SzFaldDH_blast.dree.txt with 50 nodes written
+Distance tree written to small_SzFaldDH_blast.dree.txt 5.760 elapsed CPU seconds, 6 clock seconds
+Halt after distance tree
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ ls -lth[K
+[?2004ltotal 784
+-rw-r--r-- 1 tommyor99 tommyor99  62105 Sep 17 11:13 small_SzFaldDH_blast.dbin.dat
+-rw-r--r-- 1 tommyor99 tommyor99   4761 Sep 17 11:13 small_SzFaldDH_blast.dree.txt
+-rw-r--r-- 1 tommyor99 tommyor99   8192 Sep 17 11:12 typescript
+-rw-r--r-- 1 tommyor99 tommyor99  24803 Sep 17 11:08 small_SzFaldDH_blast.fa
+-rw-r--r-- 1 tommyor99 tommyor99 247289 Sep 16 16:16 SzFaldDH_PFAM_blast_hits_filtered.fasta
+-rwxr-xr-x 1 tommyor99 tommyor99  92704 Sep 16 16:03 [0m[01;32mbclust[0m
+-rwxr-xr-x 1 tommyor99 tommyor99  88296 Sep 16 16:03 [01;32maclust[0m
+-rw-r--r-- 1 tommyor99 tommyor99 101193 Sep 16 16:02 aclust.c
+-rw-r--r-- 1 tommyor99 tommyor99 106009 Sep 16 16:02 bclust.c
+-rw-r--r-- 1 tommyor99 tommyor99  38379 Sep 16 16:02 cclust.c
+-rwxr-xr-x 1 tommyor99 tommyor99    629 Sep 16 16:02 [01;32mmakefile[0m
+-rw-r--r-- 1 tommyor99 tommyor99     52 Sep 16 16:02 version.txt
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ l[Kls -ltr
+[?2004ltotal 784
+-rw-r--r-- 1 tommyor99 tommyor99     52 Sep 16 16:02 version.txt
+-rwxr-xr-x 1 tommyor99 tommyor99    629 Sep 16 16:02 [0m[01;32mmakefile[0m
+-rw-r--r-- 1 tommyor99 tommyor99  38379 Sep 16 16:02 cclust.c
+-rw-r--r-- 1 tommyor99 tommyor99 106009 Sep 16 16:02 bclust.c
+-rw-r--r-- 1 tommyor99 tommyor99 101193 Sep 16 16:02 aclust.c
+-rwxr-xr-x 1 tommyor99 tommyor99  88296 Sep 16 16:03 [01;32maclust[0m
+-rwxr-xr-x 1 tommyor99 tommyor99  92704 Sep 16 16:03 [01;32mbclust[0m
+-rw-r--r-- 1 tommyor99 tommyor99 247289 Sep 16 16:16 SzFaldDH_PFAM_blast_hits_filtered.fasta
+-rw-r--r-- 1 tommyor99 tommyor99  24803 Sep 17 11:08 small_SzFaldDH_blast.fa
+-rw-r--r-- 1 tommyor99 tommyor99   8192 Sep 17 11:12 typescript
+-rw-r--r-- 1 tommyor99 tommyor99   4761 Sep 17 11:13 small_SzFaldDH_blast.dree.txt
+-rw-r--r-- 1 tommyor99 tommyor99  62105 Sep 17 11:13 small_SzFaldDH_blast.dbin.dat
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ more small_SzFaldDH_blast.dbin.dat
+[?2004l[{"name": "default", "bmin": 4, "bmed": 10, "bdis": 50, "centers": {
+"A0A0X3XVP3|unreviewed|Aldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0A6G0F6I3|unreviewed|Formaldehyde": "A0AB39RFP
+7|unreviewed|Formaldehyde", "A0A370VV16|unreviewed|Formaldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0A372M0L7|unre
+viewed|Formaldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0A6G4XYC8|unreviewed|Formaldehyde": "A0AB39RFP7|unreviewed
+|Formaldehyde", "A0A7X1J166|unreviewed|Formaldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0A0N0MYV9|unreviewed|Forma
+ldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0A2I0SFM9|unreviewed|Formaldehyde": "A0AB39RFP7|unreviewed|Formaldehyd
+e", "A0A5Q0LJB9|unreviewed|Formaldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0A6H1KDN8|unreviewed|Formaldehyde": "A
+0AB39RFP7|unreviewed|Formaldehyde", "A0AAU6I393|unreviewed|Formaldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0AAU6G
+3T2|unreviewed|Aldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0AB39RFP7|unreviewed|Formaldehyde": "A0AB39RFP7|unrevi
+ewed|Formaldehyde", "A0AAU2Z4X7|unreviewed|Formaldehyde": "A0AB39RFP7|unreviewed|Formaldehyde", "A0AAU2PHX2|unreviewed|F
+[7m--More--(1%)[27m[K[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ bclust -h
+[?2004lbclust: command not found
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ ./bclust -h
+[?2004lhelp flag 1
+Input parameters:
+ -msa		multiple sequence alignment input (0)
+ -alf		alignfastas input (0)
+ -dmx (null)	distance matrix input (filename)
+ -acc (null)	accessions input (filename) for subsets of alignfastas
+Alignment parameters:
+ -s (null)	substitution score matrix (filename)
+ -nonself	nonself alignments (0)
+ -go 10      	(double) value of affine gap open penalty
+ -ge 0.5     	(double) value of affine gap extension penalty
+ -gx 0       	(integer) value affine gap crossover maxlength (0 to deactivate)
+Tree-building parameters:
+ -dave		distance averaging mode (0)
+ -e D		D=distance tree, S=also single embed tree, F=also full recursive embed tree
+ -edim 20      	(integer) embed dimension
+Branch-binning parameters:
+ -bmin 4       	(integer) Ignore if branches N < bmin
+ -bmed 10      	(integer) Centroid if branch N < bmed
+ -bdis 50      	(double) Centroid if branch ave(Dij) < bdis
+ -jdis 	flag json (default txt) result of distance binning (0) 
+Output parameters:
+ -p (null)	prefix for output files
+ -jaln		flag write json alignments (0)
+ -taln		flag write text alignments (0)
+ -wdmx		flag write distance matrix (0)
+ -metadata 1	tree metadata distance/pctid [0-2]
+ -v		verbose stdout and/or stderr (0)
+ -h		show help and quit (1)
+
+Usage: aclust [command line parameters] my.fasta [my.fasta2 [my.fasta3 ...]]
+Usage: aclust -h    to see the list of command line flags and parameters.
+
+Basic operation: ACLUST produces a nearest-neighbor joining tree in Newick format
+based on sequence pairwise distances.
+
+Option 1: Aclust performs pairwise alignments from sequence Fasta:
+	aclust my.fasta [my.fasta2 ...]
+Option 2: Aclust reads an MSA (multiple sequence alignment) Fasta
+	aclust -msa my.multiplealignment.fasta
+Option 3: Aclust reads distances from Alignfastas output
+	aclust -alf my.alignfastas [my.alignfastas2 ...]
+Option 3b: Align reads from alignfastas files, but generates a tree for a subsest of labels
+	aclust -alf -acc my.accessions my.alignfastas [my.alignfastas2 ...]
+
+SEE ALSO: https://github.com/GarryGippert/aclust
+AUTHOR: Garry Paul Gippert, GarryG@dtu.dk, DTU Bioengineering
+ACLUST VERSION: 6e10c3e 2025-07-10 12:25:40 +0200
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ ./bclust -h[2P[C[C[C[C[C[C[C[C[Cmore small_SzFaldDH_blast.dbin.datls -ltr[K[K./bclust -p small_SzFaldDH_blast -jdis small_SzFaldDH_blast.fa [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1@H[31@_PFAM_blast_hits_filtered.fasta[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mSzFaldDH_PFAM_blast_hits_fil[27m[7mt[27m[7mered.fasta[27m[A]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CSzFaldDH_PFAM_blast_hits_filtered.fasta[C[K[K[Ksta
+[?2004loutput prefix 'SzFaldDH_PFAM_blast_hits_filtered.fasta'
+jdis flag 1
+assume termination of parameter stream
+Input parameters:
+ -msa		multiple sequence alignment input (0)
+ -alf		alignfastas input (0)
+ -dmx (null)	distance matrix input (filename)
+ -acc (null)	accessions input (filename) for subsets of alignfastas
+Alignment parameters:
+ -s (null)	substitution score matrix (filename)
+ -nonself	nonself alignments (0)
+ -go 10      	(double) value of affine gap open penalty
+ -ge 0.5     	(double) value of affine gap extension penalty
+ -gx 0       	(integer) value affine gap crossover maxlength (0 to deactivate)
+Tree-building parameters:
+ -dave		distance averaging mode (0)
+ -e D		D=distance tree, S=also single embed tree, F=also full recursive embed tree
+ -edim 20      	(integer) embed dimension
+Branch-binning parameters:
+ -bmin 4       	(integer) Ignore if branches N < bmin
+ -bmed 10      	(integer) Centroid if branch N < bmed
+ -bdis 50      	(double) Centroid if branch ave(Dij) < bdis
+ -jdis 	flag json (default txt) result of distance binning (1) 
+Output parameters:
+ -p SzFaldDH_PFAM_blast_hits_filtered.fasta	prefix for output files
+ -jaln		flag write json alignments (0)
+ -taln		flag write text alignments (0)
+ -wdmx		flag write distance matrix (0)
+ -metadata 1	tree metadata distance/pctid [0-2]
+ -v		verbose stdout and/or stderr (0)
+ -h		show help and quit (0)
+ACLUST VERSION: 6e10c3e 2025-07-10 12:25:40 +0200
+pparse returns 4
+oprefix SzFaldDH_PFAM_blast_hits_filtered.fasta
+Binfilename SzFaldDH_PFAM_blast_hits_filtered.fasta.dbin.dat open for writing
+Blosum62 file ../dat/BLOSUM62.dat readable
+N 24 alphabet ARNDCQEGHILKMFPSTWYVBZX*
+Read 576 matrix elements, 24 alphabet characters ARNDCQEGHILKMFPSTWYVBZX* from ../dat/BLOSUM62.dat
+./bclust Trying to read multiple fasta files, c start 4 of 5
+ argv[4], SzFaldDH_PFAM_blast_hits_filtered.fasta
+Fasta file SzFaldDH_PFAM_blast_hits_filtered.fasta readable
+Read 500 Fasta entries from SzFaldDH_PFAM_blast_hits_filtered.fasta
+read Fasta[0] SzFaldDH_PFAM_blast_hits_filtered.fasta, index 500
+Blosum PSCORE parameters:
+ Q = 402
+ A = EVD_A_CONST 3.3 + EVD_A_SLOPE 0.387 * log(Q) = 5.62063
+ B = EVD_B_CONST 0.393 + EVD_B_SLOPE 0.0585 * log(Q) = 0.743792
+ Z = 62.2446
+ P = exp((A - Z)/B - exp((A - Z)/B))/B = 1.16485e-33
+ D = exp(-exp((A - Z)/B)) = 1
+ S = -log10(1.0 - D) = 15 (blosum pscore)
+Got DMX with 500 entries, scanning for possible holes...
+Distance matrix complete
+DMX ONE is coded
+Tree file SzFaldDH_PFAM_blast_hits_filtered.fasta.dree.txt with 500 nodes written
+Distance tree written to SzFaldDH_PFAM_blast_hits_filtered.fasta.dree.txt 623.330 elapsed CPU seconds, 623 clock seconds
+Halt after distance tree
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ history
+[?2004l    1  sudo apt update
+    2  sudo apt install hmmer
+    3  hmmbuild -h
+    4  cp /mnt/c/Users/tjaor/Downloads/9162d461-feda-4b7a-99db-c6651e6240c2.aln-stockholm ~/alignment.sto
+    5  cd ~
+    6  cp /mnt/c/Users/tjaor/Downloads/SzPpBmFaldDHalignment.aln-stockholm ./alignment.sto
+    7  ls
+    8  hmmbuild my_profile.hmm alignment.sto
+    9  wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+   10  gunzip uniprot_sprot.fasta.gz
+   11  hmmsearch --tblout swissprot_hits.tbl my_profile.hmm uniprot_sprot.fasta
+   12  less swissprot_hits.tbl
+   13  cd ~
+   14  ls
+   15  wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   16  ls
+   17  bash Miniforge3-$(uname)-$(uname -m).sh
+   18  ls
+   19  python3 check_install.py
+   20  wget https://dl.kblin.org/29905/check_install.py
+   21  conda config --set auto_activate_base false
+   22  bash Miniforge3-$(uname)-$(uname -m).sh
+   23  conda config --set auto_activate_base false
+   24  bash Miniforge3-$(uname)-$(uname -m).sh
+   25  -u
+   26  conda config --set auto_activate_base false
+   27  ~/miniforge3/bin/conda init bash
+   28  conda --version
+   29  conda config --set auto_activate_base false
+   30  conda config --remove channels defaults
+   31  conda config --add channels bioconda
+   32  conda config --add channels conda-forge
+   33  conda config --set channel_priority strict
+   34  conda activate base
+   35  conda update --yes conda
+   36  conda update --yes --all
+   37  conda
+   38  ls
+   39  ls -a
+   40  cd ..
+   41  ls
+   42  cd ..
+   43  ls
+   44  ls -a
+   45  cd home
+   46  ls
+   47  ls -a
+   48  cd tommyor99/
+   49  ls
+   50  ls -a
+   51  cat .profile 
+   52  ls
+   53  conda create --yes -n jupyter python=3
+   54  conda activate jupyter
+   55  conda install --yes numpy pandas scikit-learn matplotlib jupyter jupyterlab altair pip git altair odfpy openpyxl seaborn scikit-bio scipy umap-learn wget unzip
+   56  wget https://dl.kblin.org/29905/check_install.py
+   57  python3 check_install.py
+   58  cd
+   59  ls
+   60  cd exercises/
+   61  ls
+   62  ls
+   63  cd
+   64  ls
+   65  explorer.exe .
+   66  cd
+   67  ls
+   68  unzip data-shell.zip
+   69  conda activate jupyter
+   70  ls
+   71  cd data-shell/
+   72  ls
+   73  pwd
+   74  ls -F
+   75  ls /
+   76  ls /home
+   77  ls --help
+   78  ls --man
+   79  man
+   80  man man
+   81  ls data-shell
+   82  pwd
+   83  ls
+   84  cd north-pacific-gyre/
+   85  ls
+   86  cd 2012-07-03/
+   87  ls
+   88  pwd
+   89  cd ..
+   90  ls -a
+   91  ls
+   92  mkdir thesis
+   93  ls
+   94  mdir thesis/chapter_1/section_1/subsection_1
+   95  mkdir -p  thesis/chapter_1/section_1/subsection_1
+   96  ls -R thesis
+   97  cd thesis
+   98  nano draft.txt
+   99  ls
+  100  cat draft.txt 
+  101  touch my_file.txt
+  102  ls
+  103  mv thesis/draft.txt thesis/gibberish.txt
+  104  mv draft.txt gibberish.txt
+  105  ls
+  106  mkdir examples
+  107  mv my_file.txt examples
+  108  ls
+  109  cd ..
+  110  mv thesis/examples thesis
+  111  mv thesis/examples /thesis
+  112  mv thesis/examples data-shell
+  113  ls
+  114  $ mv thesis/examples /data-shell
+  115  nano secondfile.txt
+  116  mv secondfile.txt examples/
+  117  pwd
+  118  ls
+  119  cd data-shall
+  120  cd data-shell
+  121  ls
+  122  cd ..
+  123  mkdir thesis_backup
+  124  cp thesis/ gibberish.txt thesis_backup/
+  125  ls -R
+  126  ls
+  127  cat secondfile.txt 
+  128  rm secondfile.txt 
+  129  rmdir thesis
+  130  rmdir data-shell
+  131  ls -R data-shell
+  132  rm data-shell/ myfile.txt
+  133  cd data-shell
+  134  rm my_file.txt
+  135  cd ..
+  136  rm data-shell
+  137  rm -r data-shell
+  138  ls
+  139  ls molecules/
+  140  mkdir molecules_backup
+  141  cd molecules
+  142  ls
+  143  cp cubane.pdb ethane.pdb methane.pdb octane.pdb pentane.pdb propane.pdb ../molecules_backup
+  144  cp *.pdb ../molecules_backup/
+  145  ls ???ane.pdb
+  146  cd ../
+  147  ls
+  148  cd north-pacific-gyre/
+  149  ls
+  150  cd 2012-07-03/
+  151  ls
+  152  cd -
+  153  cd
+  154  ls
+  155  cd data-shell/
+  156  ls
+  157  cd molecules
+  158  cat methane.pdb
+  159  wc methane.pdb
+  160  wc -l
+  161  wc -l *pdb
+  162  wc -l *pdb > lengths.txt
+  163  cat lengths.txt
+  164  sort lengths.txt
+  165  sort -n lengths.txt 
+  166  sort -n lengths.txt > lengths_sorted.txt
+  167  cat lengths_sorted.txt 
+  168  head -n 1 length_sorted.txt
+  169  head -n 1 lengths_sorted.txt
+  170  ls
+  171  rm lengths.txt lengths_sorted.txt 
+  172  wc -l *.pdb > length.txt
+  173  sort -n length.txt >length.txt 
+  174  head -n 1
+  175  cat length.txt
+  176  rm length.txt 
+  177  wc -l *.pdb |
+  178  wc -l *.pdb | sort -n
+  179  wc -l *.pdb | sort -n | head -n 1
+  180  wc -l *.pdb | sort -n | tail -n 1
+  181  wc -l *.pdb | sort -n | tail -n 2 | head -n 1
+  182  wc -l *.pdb | sort -n | tail 2
+  183  wc -l *.pdb | sort -n | tail -n 2 | head -n 1 > largest_molecule.txt
+  184  cat largest_molecule.txt 
+  185  cd creatures/
+  186  cd ..
+  187  cd creatures/
+  188  ls
+  189  head unicorn.dat
+  190  head - n 2 unicorn.dat
+  191  head - n 2 unicorn.dat | tail -n 1
+  192  head -n 2 unicorn.dat
+  193  head -n 2 unicorn.dat | tail -n 1
+  194  head -n 2 *.dat | tail -n 1
+  195  head -n 2 *.dat
+  196  for filename in basilisk.dat minotaur.dat unicorn.dat; do
+  197  for filename in basilisk.dat minotaur.dat unicorn.dat; do head -n 2 $filename | tail -n 1; done
+  198  for filename in *.dat; do head -n 2 $filename | tail -n 1; done
+  199  for filename in *.dat; do echo $filename | head -n 2 $filename | tail -n 1; done
+  200  nano red dragon.dat
+  201  for filename in *.dat; do echo $filename | head -n 2 $filename | tail -n 1; done
+  202  ls
+  203  for filename in *.dat; do echo $filename | head -n 2 $filename | tail -n 1; done
+  204  for filename in *.dat; do echo $filename | head -n 2 $filename | tail -n 1; done 
+  205  mv red\ dragon.dat red_dragon.dat
+  206  ls
+  207  for filename in *.dat; do cp $filename original-$filename; done
+  208  ls
+  209  mv red\ dragon.dat red_dragon.dat
+  210  mv red red_dragon.dat
+  211  ls
+  212  for filename in *.dat; do cp $filename original-$filename; done
+  213  ls
+  214  rm original-original*
+  215  ls
+  216  cd ../north-pacific-gyre/
+  217  cd 2012-07-03/
+  218  ls
+  219  ls *A.txt *B.txt
+  220  for $filename in NENE*[AB].txt; do echo Working on $filename; done
+  221  for filename in NENE*[AB].txt; do echo Working on $filename; done
+  222  for datafile in NENE*[AB].txt; do bash goostats $datafile stats-$datafile; done
+  223  ls
+  224  for datafile in NENE*[AB].txt; do echo $datafile
+  225  ls *.txt
+  226  rm stats-*
+  227  mkdir stats
+  228  for datafile in NENE*[AB].txt; do  bash goostats $datafile stats/$datafile; done
+  229  cd ..
+  230  cd..
+  231  cd ..
+  232  ls
+  233  cd molecules
+  234  ls
+  235  head -n 15 octane.pdb
+  236  head -n 15 octane.pdb | tail n-5 
+  237  head -n 15 octane.pdb | tail n-5 octane.pdb
+  238  nano middle.sh
+  239  cat middle.sh
+  240  bash middle.sh
+  241  nano middle.sh
+  242  bash middle.sh octane.pdb
+  243  bash middle.sh octane
+  244  nano middle.sh
+  245  bash middle.sh octane.pdb
+  246  bash middle.sh methane.pdb
+  247  nano middle.sh
+  248  bash middle.sh octane.pdb 15 5
+  249  bash middle.sh octane.pdb 10 5
+  250  ls
+  251  rm cubane.pdb:Z*
+  252  ls
+  253  rm *.pdb:Z*
+  254  ls
+  255  rm largest_molecule.txt 
+  256  ls
+  257  d ..
+  258  cd..
+  259  cd ..
+  260  mkdir recipes
+  261  ls
+  262  cd recipes
+  263  ls -a
+  264  git init
+  265  ls
+  266  ls-a
+  267  ls -a
+  268  git status
+  269  git config --global user.name "Tommy"
+  270  git config --global user.email "tommy@email.com"
+  271  git config --global core.editor "nano -w"
+  272  git config --global init.defaultBranch main
+  273  git config --global --list
+  274  nano guacamole.md
+  275  ls
+  276  git status
+  277  git add guacamole.md
+  278  git status
+  279  git config --global init.defaultBranch main
+  280  git status
+  281  git commit -m "Ceate initial structure for a Guacamole recipe"
+  282  git status
+  283  git config --global init.defaultBranch main
+  284  git status
+  285  git branch -m main
+  286  git status
+  287  git commit --amend
+  288  git log
+  289  nano guacamole.md 
+  290  git status
+  291  git add guacamole.md 
+  292  git status
+  293  git restore --staged guacamole.md
+  294  git status
+  295  git diff
+  296  git add guacamole.md 
+  297  git status
+  298  git commit -m "Added basic ingredients for guacamole"
+  299  git status
+  300  git log
+  301  nano tacos.md
+  302  git staus
+  303  git status
+  304  nano guacamole.md 
+  305  git status
+  306  git diff
+  307  git add guacamole.md 
+  308  git status
+  309  git add tacos
+  310  git add tacos.md 
+  311  git commit tacos.md -m "Add Recipe outline for tacos"
+  312  nano guacamole.md 
+  313  git diff
+  314  git diff --cached
+  315  git add guacamole.md
+  316  git status
+  317  git diff
+  318  git diff --cached
+  319  git status
+  320  git restore --staged --patch
+  321  git status
+  322  git diff --cached
+  323  git commit -m "change lemon to lime in guacamole ingredients"
+  324  git status
+  325  git diff
+  326  git restore guacamole.md
+  327  git status
+  328  git log
+  329  git log --oneline
+  330  git status
+  331  ls
+  332  git add cakes
+  333  git status
+  334  mkdir cakes/brownie_cakes
+  335  git status
+  336  ls
+  337  touch cakes/brownie_cakes/lemon drizzle
+  338  git status
+  339  cd /lemon
+  340  cd brownie_cakes
+  341  tocuh cakes/brownie_cakes/lemon_drizzle
+  342  touch cakes/brownie_cakes/lemon_drizzle
+  343  git log --oneline --graph
+  344  git status
+  345  git add brownie_cakes/lemon_drizzle
+  346  git add cakes/
+  347  git status
+  348  git restore drizzle
+  349  git restore cakes/
+  350  git status
+  351  git diff
+  352  ls
+  353  rm drizzle
+  354  cd cakes
+  355  ls
+  356  cd brownie_cakes/
+  357  ls
+  358  rm lemon
+  359  cd../..
+  360  cd ../..
+  361  git status
+  362  git add
+  363  git add cakes/
+  364  git status
+  365  git commit cakes/
+  366  git status
+  367  git diff HEAD~2 cakes
+  368  git log --oneline
+  369  git log
+  370  git log --oneline
+  371  git diff 2565 tacos.md
+  372  git diff 2565
+  373  git status
+  374  git diff
+  375  git diff -a
+  376  cat guacamole.md
+  377  git log --oneline
+  378  git restore -s d7bd guacamole.md
+  379  cat guacamole
+  380  cat guacamole.md 
+  381  git restore -s d7bd050 guacamole.md
+  382  git status
+  383  git log
+  384  cat guacamole.md 
+  385  git restore guacamole.md
+  386  cat guacamole.md 
+  387  git status
+  388  ssh-keygen
+  389  ls ~/.ssh/
+  390  cd ~/ssh/
+  391  ls
+  392  cd id_rsa
+  393  ls id_rsa
+  394  cat id_rsa
+  395  python
+  396  python3
+  397  conda activate jupyter
+  398  ls
+  399  cd exercises/
+  400  ls
+  401  cd code
+  402  ls
+  403  rm *Identifier
+  404  ls
+  405  less code/readings_01.py
+  406  less readings_01.py
+  407  cat readings_04.py
+  408  python readings_04
+  409  python readings_04.py
+  410  python readings_04.py --mean
+  411  print(python readings_04.py --mean)
+  412  print('hello')
+  413  python print(readings_04.py --mean)
+  414  python readings_04.py --mean
+  415  python readings_04.py --mean data/inflammation-02.csv
+  416  python readings_04.py --mean home/date-shell/data/inflammation-02.csv
+  417  python readings_04.py --mean home/data-shell/data/inflammation-02.csv
+  418  cd ..
+  419  python readings_04.py --mean data/inflammation-02.csv
+  420  python code/readings_04.py --mean data/inflammation-02.csv
+  421  suda apt update
+  422  sudo apt update
+  423  sudo apt install -y ncbi blast+ mafft cd-hit seqkit python3-biopython build-essential git
+  424  cd ..
+  425  ls
+  426  data
+  427  cd data
+  428  rm *Identifier
+  429  wget https://data-science-for-biotech.github.io/python-pandas-viz-ml/data/data.zip
+  430  unzip data.zip
+  431  cd 
+  432  wget https://data-science-for-biotech.github.io/python-pandas-viz-ml/data/data.zip
+  433  ls
+  434  unzip data.zip
+  435  sudo apt install unzip
+  436  ls
+  437  cd data
+  438  ls
+  439  cd data.zip
+  440  sudo apt update
+  441  ls
+  442  cd ..
+  443  ls
+  444  getwd
+  445  pwd
+  446  ls
+  447  grep -c
+  448  grep -c ">" SzFaldDH_PFAM_blast_hits_filtered.fasta 
+  449  wc SzFaldDH_PFAM_blast_hits_filtered.fasta
+  450  head -400 SzFaldDH_PFAM_blast_hits_filtered.fasta > small_SzFaldDH_blast.fa
+  451  vi small_SzFaldDH_blast.fa
+  452  ./aclust -p small_SzFaldDH_blast -jdis small_SzFaldDH_blast.fa 
+  453  ./aclust -h | more
+  454  ./bclust -p small_SzFaldDH_blast -jdis small_SzFaldDH_blast.fa 
+  455  ls -lt
+  456  ls -ltr
+  457  more small_SzFaldDH_blast.dbin.dat
+  458  bclust -h
+  459  ./bclust -h
+  460  ./bclust -p SzFaldDH_PFAM_blast_hits_filtered.fasta -jdis SzFaldDH_PFAM_blast_hits_filtered.fasta
+  461  history
+[?2004h]0;tommyor99@BIO-L2891: ~/Aclust/src[01;32mtommyor99@BIO-L2891[00m:[01;34m~/Aclust/src[00m$ exit
+[?2004lexit
+
+Script done on 2025-09-17 12:09:08+02:00 [COMMAND_EXIT_CODE="0"]
